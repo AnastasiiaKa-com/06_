@@ -1,0 +1,58 @@
+
+.page-title{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(56, 52, 52);
+   
+}
+/* Стили для контейнера галереи */
+.gallery{
+display: grid; /*  Используем CSS Grid для разметки */
+grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); /* Адаптивные карточки */
+gap: 20px;/*  промежуток между карточками */
+padding: 20px;/*  отступ от границ контейнера*/
+
+}
+/* Стили для карточек */
+.card{
+    width: 300px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+    color:rgb(247, 244, 244);
+    overflow: hidden;
+    
+ 
+   
+}
+/*  Стили для заголовка карточки */
+.card h2{
+    font-size: 1.5em;/*  размер шрифта заголовка */
+    margin: 0;/*  убираем отступы*/    
+    color: rgb(255, 255, 255);
+}
+.card img{
+    
+    padding: 1px; 
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    max-width: 100%;/*  Ограничиваем ширину изображения */
+    border-radius: 4px;/*  скругление углов изображения */
+   
+}
+.card p{
+    padding: 20px;
+    flex-grow: 1;/* позволяет описанию занимать доступное пространство */
+margin-top: 10px;/* отступ сверху */
+
+}
+
+
